@@ -1,10 +1,11 @@
+/* eslint-disable max-classes-per-file */
 import debounce from './debounce.js';
 
 export default class Slide {
   constructor(slide, wrapper) {
-    this.slide = document.querySelector(slide)
+    this.slide = document.querySelector(slide);
     this.wrapper = document.querySelector(wrapper);
-    this.dist = { finalPosition: 0, startX: 0, movement: 0 }
+    this.dist = { finalPosition: 0, startX: 0, movement: 0 };
     this.activeClass = 'active';
     this.changeEvent = new Event('changeEvent');
   }
@@ -88,7 +89,7 @@ export default class Slide {
       prev: index ? index - 1 : undefined,
       active: index,
       next: index === last ? undefined : index + 1,
-    }
+    };
   }
 
   changeSlide(index) {
@@ -101,7 +102,7 @@ export default class Slide {
   }
 
   changeActiveClass() {
-    this.slideArray.forEach(item => item.element.classList.remove(this.activeClass));
+    this.slideArray.forEach((item) => item.element.classList.remove(this.activeClass));
     this.slideArray[this.index.active].element.classList.add(this.activeClass);
   }
 
@@ -114,11 +115,10 @@ export default class Slide {
   }
 
   onResize() {
-    setTimeout(() =>  {
+    setTimeout(() => {
       this.slidesConfig();
       this.changeSlide(this.index.active);
     }, 500);
-    
   }
 
   addResizeEvent() {
@@ -147,11 +147,11 @@ export default class Slide {
   }
 }
 
- export class SlideNav extends Slide {
-   constructor(slide, wrapper) {
+export class SlideNav extends Slide {
+  constructor(slide, wrapper) {
     super(slide, wrapper);
     this.bindControlEvents();
-   }
+  }
 
   addArrow(prev, next) {
     this.prevElement = document.querySelector(prev);
@@ -170,7 +170,7 @@ export default class Slide {
 
     this.slideArray.forEach((item, index) => {
       control.innerHTML += `<li><a href="#slide${index + 1}">${index + 1}</a></li>`;
-      console.log(control)
+      console.log(control);
     });
     this.wrapper.appendChild(control);
     return control;
@@ -185,7 +185,7 @@ export default class Slide {
   }
 
   activeControlItem() {
-    this.controlArray.forEach(item => item.classList.remove(this.activeClass));
+    this.controlArray.forEach((item) => item.classList.remove(this.activeClass));
     this.controlArray[this.index.active].classList.add(this.activeClass);
   }
 
