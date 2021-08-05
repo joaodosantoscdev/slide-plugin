@@ -8,7 +8,7 @@
 <hr>
 <h3>Mobile 📱</h3>
 <hr>
-<img src="imgs/slide-mobile.jpg"></img>
+<img src="imgs-readme/slide-mobile.jpg"></img>
 <hr>
 <h3>Overview ⮯</h3>
 <p> There was applied here my knownledges JavaScript with DOM manipulation, creating effects and a better visual experience for the final user.</p>
