@@ -13,7 +13,7 @@
 <h3>Overview ⮯</h3>
 <p> There was applied here my knownledges JavaScript with DOM manipulation, creating effects and a better visual experience for the final user.</p>
 <hr>
-<h3>The path of the project was to clearly apply the most used and up-to-date concepts used in this language, without any kind of framework, creating a plugin that can be custumized by any WEB developer, and merged into his projects in a form of contribuition, the code behind this, is made in pure JavaScript with ECMA6+. ✔️</h3>
+<p>The path of the project was to clearly apply the most used and up-to-date concepts used in this language, without any kind of framework, creating a plugin that can be custumized by any WEB developer, and merged into his projects in a form of contribuition, the code behind this, is made in pure JavaScript with ECMA6+. ✔️</p>
 <p>The CSS classes that are used and also the code can be tottaly changed for your needs, you can slow-down the animation, change the type of buttons, to arrows, and also do a top navigation menu with images as the example above shows.</p>
 <hr>
 <em>'This project has no commercial purposes, it was carried out only for the application of my studies'📚</em>
